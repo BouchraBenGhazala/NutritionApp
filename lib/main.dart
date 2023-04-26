@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:nutritionapp/login.dart';
 
 import 'MainPage.dart';
 
-
+import 'login.dart';
 
 void main() {
   runApp(const MainApp());
@@ -16,7 +17,7 @@ class MainApp extends StatelessWidget {
     return  const MaterialApp(
       debugShowCheckedModeBanner: false,
       home:  Scaffold(
-        body: MainPage(),
+        body: login(),
       ),
     //   theme: ThemeData(primaryColor: Colors.blue,
     // iconTheme: IconThemeData(
