@@ -15,14 +15,14 @@ class login extends StatelessWidget {
           margin: EdgeInsets.all(50),
           width: 300,
           height: 100,
-          child: TextField(
+          child: const TextField(
             decoration: InputDecoration(hintText: 'Enter your username'),
           ),
         ),
         Container(
           width: 300,
           height: 100,
-          child: TextField(
+          child: const TextField(
             decoration: InputDecoration(hintText: 'Enter your password'),
           ),
         ),
@@ -31,7 +31,7 @@ class login extends StatelessWidget {
               Navigator.push(
                   context, MaterialPageRoute(builder: (context) => MainPage()));
             },
-            child: Text(
+            child: const Text(
               'Login',
               style: TextStyle(fontSize: 20),
             ),
