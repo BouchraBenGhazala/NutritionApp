@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:nutritionapp/MainPage.dart';
+import 'package:nutritionapp/Pages/Page1.dart';
 
 class login extends StatelessWidget {
   const login({super.key});
@@ -24,14 +26,17 @@ class login extends StatelessWidget {
             decoration: InputDecoration(hintText: 'Enter your password'),
           ),
         ),
-        MaterialButton(
-          color: Colors.green,
-          onPressed: () {},
-          child: Text(
-            'Login',
-            style: TextStyle(fontSize: 20),
-          ),
-        )
+        ElevatedButton(
+            onPressed: () {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => MainPage()));
+            },
+            child: Text(
+              'Login',
+              style: TextStyle(fontSize: 20),
+            ),
+            style: ElevatedButton.styleFrom(backgroundColor: Colors.green),
+            ),
       ],
     ));
   }
