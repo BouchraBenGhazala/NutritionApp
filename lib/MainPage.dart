@@ -22,9 +22,11 @@ class _MainPageState extends State<MainPage> {
   }
 
   final List<Widget> _pages = [
-    const Page1(),
-    const Page2(),
-    const Page3(),
+    Page1(
+      fruitQuantity: 10,
+    ),
+    Page2(),
+    Page3(),
   ];
 
   @override
@@ -60,7 +62,7 @@ class _MainPageState extends State<MainPage> {
                 color: _selectedIndex == 1 ? Colors.green : Colors.grey,
               ),
             ),
-            label: 'Message',
+            label: 'Calories calculator',
           ),
           BottomNavigationBarItem(
             icon: InkWell(
@@ -70,7 +72,7 @@ class _MainPageState extends State<MainPage> {
                 color: _selectedIndex == 2 ? Colors.green : Colors.grey,
               ),
             ),
-            label: 'Person',
+            label: 'MC claculator',
           ),
         ],
       ),

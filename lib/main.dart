@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nutritionapp/login.dart';
 
+import 'Calories/fruits.dart';
 import 'MainPage.dart';
 
 import 'login.dart';
@@ -14,15 +15,10 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        body: login(),
-      ),
-      //   theme: ThemeData(primaryColor: Colors.blue,
-      // iconTheme: IconThemeData(
-      //   color: Colors.black, // Set the color of the icon here
-      // ),)
+      theme: ThemeData(primarySwatch: Colors.green),
+      home: login(),
     );
   }
 }
