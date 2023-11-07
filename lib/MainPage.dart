@@ -4,7 +4,6 @@ import 'Pages/Page1.dart';
 import 'Pages/Page2.dart';
 import 'Pages/Page3.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({super.key});

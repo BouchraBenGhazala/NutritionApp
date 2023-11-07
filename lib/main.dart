@@ -1,11 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nutritionapp/login.dart';
 
-import 'Calories/fruits.dart';
-import 'MainPage.dart';
-
-import 'login.dart';
-
 void main() {
   runApp(const MainApp());
 }

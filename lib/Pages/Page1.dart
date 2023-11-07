@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
-
-import '../Calories/fruits.dart';
 
 class Page1 extends StatelessWidget {
   Page1({super.key,required this.fruitQuantity});

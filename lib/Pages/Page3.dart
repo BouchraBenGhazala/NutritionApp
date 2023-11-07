@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
 class Page3 extends StatefulWidget {
   Page3({super.key});
@@ -13,9 +12,9 @@ class _Page3State extends State<Page3> {
   String? _gender;
 
   List<String> _genderOptions = ['Male', 'Female'];
-  final _controller1 = TextEditingController();
-  final _controller2 = TextEditingController();
-  final _controller3 = TextEditingController();
+  // final _controller1 = TextEditingController();
+  // final _controller2 = TextEditingController();
+  // final _controller3 = TextEditingController();
 
   final double height = 0;
   final double weight = 0;
